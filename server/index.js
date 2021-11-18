@@ -10,7 +10,7 @@ const db = mysql.createConnection ({
 });
 
 app.get("/", (req, res) => {
-    const sqlInsert = "INSERT INTO the_sneakers_society (ColumnName, Comments) VALUES ('columnnam', 'comments');";
+    const sqlInsert = "INSERT INTO the_sneakers_society (ColumnName, Comments) VALUES ('columnname', 'comments');";
     db.query(sqlInsert, (err, result)=> {
     res.send("The-Sneakers-Society-Web-Application");
 });
